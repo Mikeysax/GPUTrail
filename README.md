@@ -25,13 +25,20 @@ GPUTrail is a GPU-based trail plugin for Godot 4, offering an efficient alternat
 3. Attach the `GPUTrail3D` node to the object you want to trail
 
 ## Properties
-
+- `active`: Turn on or off the trail
 - `length`: Number of steps in the trail
 - `texture`: Main texture of the trail
 - `color_ramp`: Color gradient along the trail's length
 - `curve`: Width modulation along the trail's length
 - `vertical_texture`: Adjust texture orientation
 - `use_red_as_alpha`: Use the red channel of the texture as alpha
+- `alpha`: Determines the overall alpha value of the trail. Is modified if using fade in and out parameters
+- `fade_curve`: Curve to control the alpha along the trail's lifetime
+- `fade_curve_intensity`: Value to control the strength of the fade curve value
+- `fade_in_seconds`: Value to determine how quickly the whole trail fades in if active is set from false to true
+- `fade_in_alpha`: Value to determine what alpha value the whole trail fades to if active is set from false to true
+- `fade_out_seconds`: Value to determine how quickly the whole trail fades out if active is set from true to false
+- `fade_out_alpha`: Value to determine what alpha value the whole trail fades to if active is set from true to false
 - `billboard`: Make the trail face the camera (experimental)
 - `dewiggle`: Improve texture mapping to the trail
 - `clip_overlaps`: Prevent trail self-intersectionis
