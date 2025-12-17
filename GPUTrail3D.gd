@@ -64,14 +64,17 @@ class_name GPUTrail3D extends GPUParticles3D
 @export_category("Fade")
 ## Fade Curve is a texture that is used to determine the alpha of the trail over it's lifetime
 @export var fade_curve : CurveTexture : set = _set_fade_curve
+## Fade Curve Intensity is a value used to modify the strength of the Fade Curve
 @export var fade_curve_intensity: float = 1.0 : set = _set_fade_curve_intensity
 
 ## Fade In Seconds is how many seconds it takes to fade in the trail if active is set to true
 @export var fade_in_seconds : float = 0.0 : set = _set_fade_in_seconds
+## Fade In Alpha is the Alpha value that the whole trail will go to. The alpha value is also a parameter on the trail
 @export var fade_in_alpha : float = 1.0 : set = _set_fade_in_alpha
 
-## Fade Away Seconds is how many seconds it takes to fade out the trail if active is set to false
+## Fade Out Seconds is how many seconds it takes to fade out the trail if active is set to false
 @export var fade_out_seconds : float = 0.0 : set = _set_fade_out_seconds
+## Fade Out Alpha is the Alpha value that the whole trail will go to. The alpha value is also a parameter on the trail
 @export var fade_out_alpha : float = 0.0 : set = _set_fade_out_alpha
 
 
