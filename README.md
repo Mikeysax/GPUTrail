@@ -28,6 +28,8 @@ GPUTrail is a GPU-based trail plugin for Godot 4, offering an efficient alternat
 - `active`: Turn on or off the trail
 - `length`: Number of steps in the trail
 - `texture`: Main texture of the trail
+- `mask`: A texture used to modify the alpha of trail. Uses the red channel of the texture to determine what is visible.
+- `mask_strength`: A float value from 0.0 to 1.0 for determing how intense the mask texture is
 - `color_ramp`: Color gradient along the trail's length
 - `curve`: Width modulation along the trail's length
 - `vertical_texture`: Adjust texture orientation
