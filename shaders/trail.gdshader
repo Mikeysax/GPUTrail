@@ -5,11 +5,7 @@ render_mode keep_data,disable_force,disable_velocity;
 uniform bool active = true;
 
 void process() {
-	if(active) {
-		ACTIVE = true;
-	} else {
-		ACTIVE = false;
-	}
+	ACTIVE = active;
 
 	// CUSTOM.w tracks the particles place in the trail, in range (0..LIFETIME]
 	// requires that LIFETIME = number of particles
