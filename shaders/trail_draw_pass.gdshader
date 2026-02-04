@@ -5,7 +5,7 @@ render_mode unshaded,world_vertex_coords,cull_disabled;
 uniform sampler2D tex : repeat_enable, source_color, hint_default_white;
 uniform sampler2D mask : hint_default_white;
 uniform float mask_strength = 1.0;
-uniform sampler2D fade_curve: repeat_disable, hint_default_black;
+uniform sampler2D fade_curve: repeat_disable, hint_default_white;
 uniform float fade_curve_intensity = 1.0;
 uniform float alpha = 1.0;
 uniform vec2 uv_offset = vec2(0);
